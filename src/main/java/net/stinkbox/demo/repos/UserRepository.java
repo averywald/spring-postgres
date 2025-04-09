@@ -1,10 +1,11 @@
 package net.stinkbox.demo.repos;
 
-// import org.springframework.boot.jdbc.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-public class UserRepository  {
-    
-    public static int findByName(String username) {
-        return 1;
-    }
+import net.stinkbox.demo.dao.User;
+
+@RepositoryRestResource
+public interface UserRepository extends JpaRepository<User, Long> {
+
 }

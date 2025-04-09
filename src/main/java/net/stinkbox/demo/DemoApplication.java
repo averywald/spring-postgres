@@ -17,10 +17,10 @@ public class DemoApplication {
 		return "Hello, World";
 	}
 
-	@GetMapping("/users/{username}")
-	public int getUserByName(@PathVariable String username) {
-		return UserRepository.findByName(username);
-	}
+	// @GetMapping("/users/{username}")
+	// public int getUserByName(@PathVariable String username) {
+	// 	return UserRepository.findByName(username);
+	// }
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
